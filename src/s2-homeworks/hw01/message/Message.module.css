@@ -1,25 +1,46 @@
 .message {
-
+    max-width: 80%;
+    text-align: right;
+    margin: 0 70px 30px auto;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 .imageAndText {
-
+    position: relative;
 }
 
 .imageAndText img {
-
+    height: 48px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
 }
 
 .text {
-
+    position: relative;
+    right: 60px;
+    display: inline-block;
+    background-color: #0066CC;
+    border-radius: 10px;
+    padding: 7px 13px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .text:after {
-
+    content: '';
+    position: absolute;
+    right: -20px;
+    bottom: -5px;
+    border: 7px solid transparent;
+    border-left: 21px solid #0066CC;
+    rotate: 19deg;
 }
 
 .name {
-
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .messageText {
@@ -27,5 +48,11 @@
 }
 
 .time {
-
+    display: block;
+    width: 48px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    margin: 5px 0px 0px auto;
 }

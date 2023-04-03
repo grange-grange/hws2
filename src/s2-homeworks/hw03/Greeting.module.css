@@ -1,4 +1,5 @@
 .greetingForm {
+    margin-top: 30px;
 }
 
 .inputAndButtonContainer {
@@ -29,6 +30,8 @@
 }
 
 .text {
+    color: grey;
+    font-size: 14px;
 }
 
 .greeting {

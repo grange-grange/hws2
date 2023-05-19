@@ -16,6 +16,11 @@
 }
 
 .errorInput {
+  height: 36px;
+  width: 370px;
+  border-radius: 5px;
+  padding: 8px 12px;
+  border: solid 1px #d1d1d1;
 }
 
 .errorInput:focus {

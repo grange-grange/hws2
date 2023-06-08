@@ -1,4 +1,9 @@
 .select {
+    display: inline-block;
+    width: 180px;
+    height: 25px;
+    margin-right: 110px;
+    font-size: 14px;
 }
 
 .select:focus {

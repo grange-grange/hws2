@@ -15,7 +15,8 @@
 }
 
 .label {
-    display: block;
+    display: flex;
+    align-items: center;
     margin-bottom: 22px;
 }
 

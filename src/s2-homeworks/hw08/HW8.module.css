@@ -8,16 +8,43 @@
 }
 
 .buttonsContainer {
+    text-align: right;
+}
+.buttonsContainer button {
+    margin-left: 12px;
 }
 
 .container {
+    width: 606px;
+}
+
+.users {
+    table-layout: fixed;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    border-collapse: collapse;
+    margin-top: 18px;
 }
 
 .thead {
+    font-weight: 600;
+    background-color: #E5E5E5;
 }
 
 .nameCol {
+    padding: 10px 17px;
+    width: 50%;
+    border-top: 1px solid #E5E5E5;
 }
 
 .ageCol {
+    padding: 10px 0;
+    width: 50%;
+}
+
+tr td:nth-child(2) {
+    padding: 10px 0;
+    border-top: 1px solid #E5E5E5;
 }

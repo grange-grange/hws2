@@ -6,6 +6,9 @@
     align-items: center;
     justify-content: left;
 }
+.wrapper:first-of-type {
+    margin-bottom: 30px;
+}
 
 .number {
     display: block;

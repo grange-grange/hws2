@@ -29,7 +29,9 @@ function HW11() {
                 setValue2(Math.max(value[1], value[0] + minDistance))
             }
         } else {
-            setValue1(value)
+            if (activeThumb === 0) {
+                setValue1(Math.min(value, value2 - minDistance))
+            }
         }
     }
 

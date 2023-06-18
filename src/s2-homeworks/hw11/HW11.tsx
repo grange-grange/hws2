@@ -19,7 +19,7 @@ function HW11() {
 
     const change = (event: Event, value: ChangeValueType, activeThumb: number) => {
         // пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
-        const minDistance = 10;
+        const minDistance = 1;
         if (Array.isArray(value)) {
             if (activeThumb === 0) {
                 setValue1(Math.min(value[0], value[1] - minDistance))

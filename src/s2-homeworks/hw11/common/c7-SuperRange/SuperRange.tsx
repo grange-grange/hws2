@@ -1,21 +1,11 @@
 import React from 'react'
 import {Slider, SliderProps} from '@mui/material'
-import {ChangeValueType} from "../../HW11";
 
-type SuperRangeType = SliderProps & {
-    change: (event: Event, value: ChangeValueType, activeThumb: number) => void
-    value1: number
-    value2?: number
-}
-const SuperRange: React.FC<SuperRangeType> = (props) => {
+
+const SuperRange: React.FC<SliderProps> = (props) => {
 
     return (
         <Slider
-            getAriaLabel={() => 'Minimum distance'}
-            value={props.value2 ? [props.value1, props.value2] : props.value1}
-            onChange={props.change}
-            valueLabelDisplay="auto"
-            disableSwap
             sx={{ // стили для слайдера // пишет студент
                 width: 147,
                 color: '#00CC22',

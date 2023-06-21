@@ -17,21 +17,14 @@ function HW11() {
     const [value2, setValue2] = useState(restoreState<number>('hw11-value2', 100))
 
 
-    const change = (event: Event, value: ChangeValueType, activeThumb: number) => {
+    const change = (event: Event, value: ChangeValueType) => {
         // пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
-        const minDistance = 1;
         if (Array.isArray(value)) {
-            if (activeThumb === 0) {
-                setValue1(Math.min(value[0], value[1] - minDistance))
-                setValue2(value[1])
-            } else {
-                setValue1(value[0])
-                setValue2(Math.max(value[1], value[0] + minDistance))
-            }
+            setValue1(value[0])
+            setValue2(value[1])
         } else {
-            if (activeThumb === 0) {
-                setValue1(Math.min(value, value2 - minDistance))
-            }
+            setValue1(value)
+
         }
     }
 
@@ -46,8 +39,8 @@ function HW11() {
                         <SuperRange
                             id={'hw11-single-slider'}
                             // сделать так чтоб value1 изменялось // пишет студент
-                            change={change}
-                            value1={value1}
+                            onChange={change}
+                            value={value1}
                         />
                     </div>
                     <div className={s.wrapper}>
@@ -55,9 +48,8 @@ function HW11() {
                         <SuperRange
                             id={'hw11-double-slider'}
                             // сделать так чтоб value1/2 изменялось // пишет студент
-                            change={change}
-                            value1={value1}
-                            value2={value2}
+                            onChange={change}
+                            value={[value1, value2]}
                         />
                         <span id={'hw11-value-2'} className={s.number}>{value2}</span>
                     </div>
